@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+
+const withCSS = require('@zeit/next-css')
+module.exports = withCSS({
+  /* my next config */
   reactStrictMode: true,
   swcMinify: true,
-}
-
-module.exports = nextConfig
+})
